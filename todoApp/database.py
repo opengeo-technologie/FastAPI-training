@@ -8,8 +8,8 @@ from sqlalchemy.ext.declarative import declarative_base
 # )
 
 
-# SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgres@localhost/todoDatabase"
-SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:@127.0.0.1:3306/todoDatabase"
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgres@localhost/todoDatabase"
+# SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:@127.0.0.1:3306/todoDatabase"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
