@@ -69,6 +69,6 @@ def test_user():
     db.add(user)
     db.commit()
     yield user
-    # with engine.connect() as connection:
-    #     connection.execute(text("DELETE FROM users;"))
-    #     connection.commit()
+    with engine.connect() as connection:
+        connection.execute(text("DELETE FROM users;"))
+        connection.commit()
